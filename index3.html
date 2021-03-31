@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css Grid 3</title>
+
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 1em;
+
+            -ms-grid-rows: minmax(100px, auto);
+            -ms-grid-template-columns: 1fr 2fr 1fr;
+            -ms-grid-gap: 1em;
+           /* Default styles */
+            justify-items:stretch;
+            align-items:stretch;
+        }
+
+        .wrapper > div {
+            background-color: #eee;
+            padding: 1em;
+            
+        }
+        .wrapper > div:nth-child(odd){
+            background-color: #ddd;
+        }
+
+        .box1{
+            /* align-self: end; */
+            grid-column: 1/3; /* change where to start and end in lines columns*/
+            grid-row: 2/9; /* change where to start and end in lines rows*/
+            -ms-grid-column: 1/3;
+            -ms-grid-row: 1/5;
+        }
+        .box2{
+            /* align-self: start; */
+            grid-column: 1/3;
+        }
+        .box3{
+            /* justify-self: center; */
+            grid-column: 3/4;
+            grid-row: 1/7;
+        }
+        .box4{
+            grid-row: 7/9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+    </div>
+</body>
+
+</html>

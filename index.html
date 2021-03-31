@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS Grid</title>
+        <style>
+            .wrapper{
+                display: grid;
+                grid-template-columns: 40% 30% 30%;
+                /* grid-row-gap:1em;
+                grid-column-gap:1em; */
+                grid-gap:1em;
+
+            }
+
+            .wrapper > div {
+                background-color: #eee;
+                padding:1em;
+            }
+
+            .wrapper > div:nth-child(odd) {
+                background-color: #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda libero blanditiis distinctio. Veniam tempora qui quam minus, reprehenderit vel, distinctio corrupti culpa maxime esse obcaecati quas repellendus magnam aut tempore earum autem fugit? Voluptate, nihil alias. Earum numquam non at sequi modi saepe eligendi velit alias quae obcaecati magnam ut ea, fugit facere id sunt nulla quas atque, quos eaque voluptatem rerum architecto similique? Laborum aperiam optio saepe ipsam placeat exercitationem dolorum consequuntur, aliquid, corrupti laboriosam, ipsa facilis. Soluta, illo!</div>
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam eum, veritatis laboriosam mollitia ut, doloremque iusto harum iste quaerat, provident laudantium! Itaque officiis suscipit ullam quibusdam. Natus blanditiis quisquam itaque fugiat est asperiores eligendi, dolor maiores qui inventore, alias exercitationem!</div>
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero similique porro magnam ut ipsam odio dolorem non, ex cumque nesciunt.</div>
+            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda libero blanditiis distinctio. Veniam tempora qui quam minus, reprehenderit vel, distinctio corrupti culpa maxime esse obcaecati quas repellendus magnam aut tempore earum autem fugit? Voluptate, nihil alias. Earum numquam non at sequi modi saepe eligendi velit alias quae obcaecati magnam ut ea, fugit facere id sunt nulla quas atque, quos eaque voluptatem rerum architecto similique? Laborum aperiam optio saepe ipsam placeat exercitationem dolorum consequuntur, aliquid, corrupti laboriosam, ipsa facilis. Soluta, illo!</div>
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam eum, veritatis laboriosam mollitia ut, doloremque iusto harum iste quaerat, provident laudantium! Itaque officiis suscipit ullam quibusdam. Natus blanditiis quisquam itaque fugiat est asperiores eligendi, dolor maiores qui inventore, alias exercitationem!</div>
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero similique porro magnam ut ipsam odio dolorem non, ex cumque nesciunt.</div>
+        </div>
+    </body>
+</html>

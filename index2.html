@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css Grid 2</title>
+
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 3fr 2fr;
+            grid-auto-rows: minmax(100px, auto);
+            
+        }
+
+        .wrapper > div {
+            background-color: #eee;
+            padding: 1em;
+            
+        }
+        .wrapper > div:nth-child(odd){
+            background-color: #ddd;
+        }
+
+        .nested {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(40px,auto);
+            grid-gap:1em;
+            
+        }
+        .nested > div {
+            padding: 1em;
+            border:1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>Lorem, ipsum dolor.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet esse voluptate. Explicabo
+            consequatur ipsam cum?</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem amet ipsa tempora animi aliquam alias reiciendis neque aspernatur dolor accusantium aliquid perferendis voluptatem beatae delectus dolore, ipsam enim culpa? Incidunt officiis ad nam est similique. Odio rerum molestiae nam maxime!</div>
+        <div>Lorem, ipsum dolor.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet esse voluptate. Explicabo
+            consequatur ipsam cum?</div>
+        <div class="nested">
+            <div>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, est repellendus pariatur obcaecati iure ratione perspiciatis harum ad modi hic vel numquam, aspernatur enim voluptates eos earum maxime non laudantium.</div>
+            <div>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolor porro, iste deserunt, expedita debitis voluptatibus ipsam eveniet dolorum sunt aut, ipsa necessitatibus minima nostrum! Soluta vero quia nulla odit deserunt architecto, nam sunt autem corporis ab dolores harum, in, minus quod quo et dolorum quos excepturi. Dolorum possimus assumenda atque illum eius error doloribus nesciunt amet enim, sint magnam sapiente sed tenetur tempore debitis beatae aspernatur natus quasi repellendus omnis similique aut iste quisquam quia! Error iusto dolorem, voluptatem ex qui optio repellat fugit illo necessitatibus temporibus nihil delectus voluptatibus commodi sed ad minus adipisci blanditiis id eaque excepturi.</div>
+            <div>3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium reprehenderit nulla, excepturi molestiae cumque quae cupiditate iste ut inventore doloribus doloremque! Minus saepe eos nostrum assumenda explicabo voluptatem ipsam deleniti.</div>
+            <div>4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla odit explicabo, inventore sed illum incidunt vel hic illo labore ullam voluptates? Voluptatum facilis quod libero culpa tempore fugit magni non ut commodi neque, deserunt dolorem asperiores repellendus sed nihil optio nisi adipisci ipsa fuga laudantium aliquid quo, quidem et? Necessitatibus.</div>
+
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+        <div>Lorem, ipsum dolor.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet esse voluptate. Explicabo
+            consequatur ipsam cum?</div>
+        <div>Lorem</div>
+        <div>Lorem, ipsum dolor.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet esse voluptate. Explicabo
+            consequatur ipsam cum?</div>
+        <div>Lorem</div>
+        <div>Lorem, ipsum dolor.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet esse voluptate. Explicabo
+            consequatur ipsam cum?</div>
+        <div>Lorem</div>
+        <div>Lorem, ipsum dolor.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet esse voluptate. Explicabo
+            consequatur ipsam cum?</div>
+        <div>Lorem</div>
+        <div>Lorem, ipsum dolor.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet esse voluptate. Explicabo
+            consequatur ipsam cum?</div>
+        <div>Lorem</div>
+
+    </div>
+
+    <script type="text/javascript">
+        var boxes = document.querySelectorAll('.box');
+    </script>
+</body>
+
+</html>
